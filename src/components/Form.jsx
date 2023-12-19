@@ -36,7 +36,7 @@ export default function Form() {
   useEffect(() => {
     if (Object.keys(error).length === 0 && submit) {
       axios
-        .post("https://redesigned-pancake-7j9jvpjw6v5cw6xv-5000.app.github.dev/", user)
+        .post("https://yoga-backend-one.vercel.app/", user)
         .then((res) => {
           console.log(res.status, res);
           if(res.status == 200){
